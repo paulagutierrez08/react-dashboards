@@ -1,37 +1,27 @@
 import {Box, CssBaseline, Grid} from "@mui/material";
-import {grey} from "@mui/material/colors";
 
+function Layout ({children}) {
+    const [header, menu, kpi1, kpi2, kpi3, kpi4, sales, traffic]= children
 
-import "../styles/app.css"
-
-function Layout () {
     return (
         <Box style={{display: "flex", height: "100vh"}}>
             <CssBaseline/>
-            <Grid container className="container" m={2}>
-                <Grid item flexBasis={220} bgcolor={grey[300]} m={2}>Side</Grid>
+            <Grid container sx={{flexgrow:1}}>
+                <Grid item flexBasis={220}>{menu}</Grid>
                 <Grid item flex={1}>
-                    <Grid xs={12} my={2} bgcolor={grey[300]} height={100}>Header</Grid>
-                    <Grid container>
-                        <Grid xs={3} pr={2}>
-                        <Grid bgcolor={grey[300]} height={150}>PKI</Grid>
-                        </Grid>
-                        <Grid xs={3} pr={2}>
-                        <Grid bgcolor={grey[300]} height={150}>PKI</Grid>
-                        </Grid>
-                        <Grid xs={3} pr={2}>
-                        <Grid bgcolor={grey[300]} height={150}>PKI</Grid>
-                        </Grid>
-                        <Grid xs={3}>
-                        <Grid bgcolor={grey[300]} height={150}>PKI</Grid>
-                        </Grid>
+                    <Grid xs={12}>{header}</Grid>
+                    <Grid container p={2}>
+                        <Grid xs={3} pr={2}>{kpi1}</Grid>
+                        <Grid xs={3} pr={2}>{kpi2}</Grid>
+                        <Grid xs={3} pr={2}>{kpi3}</Grid>
+                        <Grid xs={3} pr={2}>{kpi4}</Grid>
                     </Grid> 
                     <Grid container my={2}>
                         <Grid xs={8} pr={2}>
-                        <Grid bgcolor={grey[300]} height={400}>Container 1</Grid>
+                        <Grid pl={2}>{sales}</Grid>
                         </Grid> 
                         <Grid xs={4}>
-                        <Grid bgcolor={grey[300]} height={400}>Container 2</Grid>
+                        <Grid pr={2}>{traffic}</Grid>
                         </Grid> 
                     </Grid>
                 </Grid>

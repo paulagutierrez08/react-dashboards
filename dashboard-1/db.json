@@ -1,0 +1,37 @@
+[
+    {
+        "title": "budget",
+        "amount": 24000,
+        "amountType": "thousands",
+        "image": "MoneyOutlines",
+        "changeFromLastMonth": -12,
+        "type": "change"
+    },
+
+    {
+        "title": "total costumer",
+        "amount": 1600,
+        "amountType": "thousands",
+        "image": "GroupOutlines",
+        "changeFromLastMonth": 16,
+        "type": "change"
+    },
+
+    {
+        "title": "task progress",
+        "amount": 75.5,
+        "amountType": "percentage",
+        "image": "InsertChartOutlinedRounded",
+        "changeFromLastMonth": null,
+        "type": "progress"
+    },
+
+    {
+        "title": "total profit",
+        "amount": 23000,
+        "amountType": "thousands",
+        "image": "AttachMoneyOutlined",
+        "changeFromLastMonth": null,
+        "type": null
+    }
+]

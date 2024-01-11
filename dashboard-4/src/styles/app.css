@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  overflow: hidden;
+}
+
+hr {
+  width: 220px;
+}
+
+
+.menu-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #101827;
+  height: 100vh;
+}
+
+.avatar {
+  right: 60px;
+}
+
+
+.items-boxes {
+  color: #EEF3FD;
+}
+
+.type {
+  background-color: #192130;
+  color: #EEF3FD;
+}
+
+.type label {
+  color: #EEF3FD;
+}
+
+.white-text input {
+  color: #fff;
+}
+
+.kpi-container{
+  display: flex;
+  padding: 8px;
+}
+
+.title {
+text-transform: uppercase;
+padding: 0 12px ;
+color: rgba(98, 98, 98, 0.865);
+}
+
+.amount {
+  padding: 0 12px ;
+}
+
+.change-kpi {
+  font-size: 13px;
+  color: rgba(178, 175, 175, 0.865);
+}
+
+/* Pie-chart */
+.pie-chart-container {
+  min-height: 300px;
+}
+
+.pie-chart-header {
+  margin: 0;
+  padding: 15px;
+}
+.pie-chart-icons {
+  color: #6B7280;
+  display: flex;
+  justify-content: space-around;
+  width: 280px;
+}
+
+table {
+  width: 285px;
+}
+
+.pie-chart-table tbody th {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0px 12px;
+}
+.pie-chart-table tbody tr:last-child {
+  font-size: 1.5rem;
+  padding: 0px 12px;
+}
+
+.pie-chart-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
